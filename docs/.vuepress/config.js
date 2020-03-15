@@ -1,8 +1,16 @@
+const pluginConf = require('./config/pluginConf.js');
+
 module.exports = {
   title: "踏浪",
   description: '踏浪的文档',
   // base:'/documents/',
+  head: [
+    ['link', { rel: 'icon', href: '/icons/android-chrome-192x192.png' }],
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+  ],
+  plugins: pluginConf,
   themeConfig: {
+    
     // logo: '/assets/img/logo.png',
     // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
     repo: 'houyimin/documents',
@@ -30,6 +38,7 @@ module.exports = {
           { text: 'sed', link: '/sed/' }
         ]
       },
+      { text: 'PHP', link: '/php/' },
       // { text: 'github', link: 'https://github.com/houyimin' },
     ],
     // sidebar: [
@@ -38,17 +47,18 @@ module.exports = {
     //     // ['/linux/shell/', 'shell'],
     //     ['/shell/split', 'split文件分割'],
     //   ],
-    sidebar: {
-      '/shell/': [
-        '',     /* /foo/ */
-        ['split', 'split文件分割'],  /* /foo/one.html */
-        // 'two'   /* /foo/two.html */
-      ],
-    },
+    // sidebar: {
+    //   '/shell/': [
+    //     '', 
+    //     ['split', 'split文件分割'], 
+    //   ],
+    // },
     // sidebar: 'auto',//自动生成侧边栏
     lastUpdated: '上次更新', // string | boolean
     smoothScroll: true,//页面滚动
     sidebarDepth: 2,
     displayAllHeaders: true
+
+
   }
 }
