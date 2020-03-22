@@ -30,15 +30,25 @@ module.exports = {
     nav: [
       { text: 'Home', link: '/' },
       {
+        text: 'Vue', link: '/vue/',
+        items: [
+          { text: 'vuepress', link: '/vue/vuepress' }
+        ]
+      },
+      {
         text: 'Linux', link: '/linux/',
         items: [
           { text: 'Shell', link: '/shell/' },
           { text: 'Awk', link: '/awk/' },
           { text: 'vim', link: '/vim/' },
-          { text: 'sed', link: '/sed/' }
+          { text: 'Sed', link: '/sed/' }
         ]
       },
-      { text: 'PHP', link: '/php/' },
+      { text: 'PHP', link: '/php/', 
+        items: [
+          { text: 'phpstorm', link: '/php/phpstorm' }
+        ]
+      },
       // { text: 'github', link: 'https://github.com/houyimin' },
     ],
     // sidebar: [
