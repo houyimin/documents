@@ -36,17 +36,16 @@ module.exports = {
         ]
       },
       {
-        text: 'Linux', link: '/linux/',
-        items: [
-          { text: 'Shell', link: '/shell/' },
-          { text: 'Awk', link: '/awk/' },
-          { text: 'vim', link: '/vim/' },
-          { text: 'Sed', link: '/sed/' }
-        ]
+        text: 'Linux', link: '/linux/'
       },
       { text: 'PHP', link: '/php/', 
         items: [
           { text: 'phpstorm', link: '/php/phpstorm' }
+        ]
+      },
+      { text: 'Python', link: '/python/', 
+        items: [
+          { text: 'pandas', link: '/python/pandas' }
         ]
       },
       // { text: 'github', link: 'https://github.com/houyimin' },
